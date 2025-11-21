@@ -102,6 +102,37 @@ p {
     border-radius: 8px;
     padding: 5px;
 }
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px: 
+    margin-top: 20px; 
+}
+
+.gallery img {
+    max-wdth: 150px; 
+    border: 3px solid #780000; 
+    border-radius: 6px;
+}
+ul {
+   list-style-postion: inside; 
+    padding-left: 0; 
+    margin-left: 0;
+    max-width: 800px; 
+    margin: 20px auto;
+    text-align: left: 
+}
+
+Ul li {
+    margin: 8px 0; 
+    padding-left: 5px; 
+}
+
+ul li: :marker { 
+    color: #780000; 
+    font-size: 1.1em;
+}
+    
 footer {
     background: #780000; 
     color: #fcf0d6;
