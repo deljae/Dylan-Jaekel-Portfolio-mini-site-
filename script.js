@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoader",() => {
+document.addEventListener("DOMContentLoaded",() => {
   const toggleBtn =
-    document.getEleementById("menuToggle");
+    document.getElementById("menuToggle");
+  const navlinks =
   document.querySelector(".nav");
   
   toggleBtn.addEventListener("click", () => {
-    NavLinks.classList.toggle("show"); 
+    navLinks.classList.toggle("show"); 
   });
 });
