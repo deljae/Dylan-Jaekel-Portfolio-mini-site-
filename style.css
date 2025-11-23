@@ -134,7 +134,7 @@ ul li::marker {
 }
     
 footer {
-    background: #780000; 
+    background: none; 
     color: #fcf0d6;
     text-align: center;
     padding: 15px;
