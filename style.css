@@ -138,7 +138,7 @@ footer {
     color: #fcf0d6;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    position: static;
     bottom: 0; 
     width: 100%; 
 }
