@@ -133,12 +133,16 @@ ul li::marker {
     font-size: 1.1em;
 }
     
-footer {
-    background: none; 
+.site-footer {
+    background: #780000;
+    text-align: center; 
+    padding: 20px;
+    width: 100%;
+}
+.site-footer p {
     color: #fcf0d6;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0; 
-    width: 100%; 
+    margin: 0;
+    font-weight: bold;
+    background: none;
+    border: none;
 }
