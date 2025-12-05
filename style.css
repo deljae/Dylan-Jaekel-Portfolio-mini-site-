@@ -146,3 +146,88 @@ ul li::marker {
     background: none;
     border: none;
 }
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/ally-senior-photo.png" style="width:100%">
+    <img src="/caly-with-couch.png" style="width:100%">
+    <img src="/cassidy-senior-photo.png" style="width:100%">
+    <img src="/lauren-muff.png" style="width:100%">
+    <img src="/emily-fights-for-ball.png" style="width:100%">
+    <img src="/emily-with-family.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/gianna-senior-photo.png" style="width:100%">
+    <img src="/jade-senior-photo.png" style="width:100%">
+    <img src="/lauren-senior-photo.png" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/penny-lunges-for-ball.png" style="width:100%">
+    <img src="/penny-senior-photo.png" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/rylee-gaurds-against-player.png" style="width:100%">
+    <img src="/rylee-hutled-v-2-players.png" style="width:100%">
+    <img src="/trinity-gaurds-against-colorodo.png" style="width:100%">
+    <img src="/trinity-goes-for-goal.png" style="width:100%">
+    <img src="/gianna-and-emily-go-for-ball.png" style="width:100%">
+  </div>
+
+</body>
+</html>
+
