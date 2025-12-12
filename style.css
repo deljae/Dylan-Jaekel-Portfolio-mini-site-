@@ -90,18 +90,27 @@ p {
 }
 
 .photo-grid {
-    display: grid; 
-    grid-template-columns: repeat (auto-fill, minmax(220px, 1fr)); 
-    gap: 12px;
-    padding: 20px; 
+   column-count: 4;
+    column-gap: 15px;
+    padding: 20px;
 }
 .photo-grid img {
     width: 100%; 
-    height: auto;
-    border-radius: 6px;
-    display: block; 
-    object-fit:cover; 
+    margin-bottom: 15px; 
+    border-radius: 6px; 
     border: 3px solid #780000; 
+    display: block; 
+    brak-inside: avoid; 
+}
+@media (max-width: 1200px) {
+    .photo-grid {
+        column-count: 2; 
+    }
+}
+@media (max-width: 500px) {
+    .photo-grid {
+        column-count: 1;
+    }
 }
 
 .featured-img {
