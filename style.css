@@ -36,19 +36,24 @@ nav {
     cursor: pointer;
 }
 
-/*nav Default nav (desktop) */
 .nav {
     list-style: none; 
     display: flex; 
-    flex-direction: row;
-    background: #003049;
     gap: 25px;
     margin: 0;
     padding: 0;
     background: #003049;
 }
+.nav li a {
+    color: #fcf0d6;
+    text-direction: none;
+    font-weight: bold;
+    padding: 8px 12px; 
+}
+.nav li a:hover {
+    color: #669bbc; 
+}
 
-/* mobile view */
 @media (max-width: 760px) {
     .nav {
         display: none; 
@@ -64,21 +69,11 @@ nav {
         display: block;
     }
 }
-/* Hide toggle button on desktop */
+
 @media (min-width: 76px) {
     #menuToggle {
         display: none;
     }
-}
-
-.nav li a { 
-    color: #fcf0d6;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-}
-.nav li a:hover {
-    color: #669bbc;
 }
 
 main { 
@@ -93,7 +88,22 @@ p {
     background-color: #fcf0d6;
     border-radius: 8px;
 }
-    
+
+.photo-grid {
+    display: grid; 
+    grid-template-columns: repeat (auto-fill, minmax(220px, 1fr)); 
+    gap: 12px;
+    padding: 20px; 
+}
+.photo-grid img {
+    width: 100%; 
+    height: auto;
+    border-radius: 6px;
+    display: block; 
+    object-fit:cover; 
+    border: 3px solid #780000; 
+}
+
 .featured-img {
     max-width: 300px; 
     margin: 30px auto; 
@@ -147,7 +157,7 @@ ul li::marker {
 }
 
 <style>
-* {
+{
   box-sizing: border-box;
 }
 
@@ -201,25 +211,19 @@ body {
 </style>
 <body>
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
+<div class= "photo-grid">
     <img src="/ally-senior-photo.png" style="width:100%">
     <img src="/caly-with-couch.png" style="width:100%">
     <img src="/cassidy-senior-photo.png" style="width:100%">
     <img src="/lauren-muff.png" style="width:100%">
     <img src="/emily-fights-for-ball.png" style="width:100%">
     <img src="/emily-with-family.png" style="width:100%">
-  </div>
-  <div class="column">
     <img src="/gianna-senior-photo.png" style="width:100%">
     <img src="/jade-senior-photo.png" style="width:100%">
     <img src="/lauren-senior-photo.png" style="width:100%">
     <img src="/w3images/mountainskies.jpg" style="width:100%">
     <img src="/penny-lunges-for-ball.png" style="width:100%">
     <img src="/penny-senior-photo.png" style="width:100%">
-  </div>  
-  <div class="column">
     <img src="/rylee-gaurds-against-player.png" style="width:100%">
     <img src="/rylee-hutled-v-2-players.png" style="width:100%">
     <img src="/trinity-gaurds-against-colorodo.png" style="width:100%">
