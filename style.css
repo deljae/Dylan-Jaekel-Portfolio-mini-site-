@@ -102,18 +102,17 @@ p {
     border-radius: 8px;
     padding: 5px;
 }
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px; 
+
+div.scroll-container {
+    background-color: #780000; 
+    over-flow: auto; 
+    white-space: nowrap; 
+    padding: 10px;
+}
+div.scroll container img {
+    padding: 10px;
 }
 
-.gallery img {
-    max-width: 150px; 
-    border: 3px solid #780000; 
-    border-radius: 6px;
-}
 ul {
    list-style-position: inside; 
     padding-left: 0; 
