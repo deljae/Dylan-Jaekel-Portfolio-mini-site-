@@ -230,7 +230,24 @@ body {
     <img src="/trinity-goes-for-goal.png" style="width:100%">
     <img src="/gianna-and-emily-go-for-ball.png" style="width:100%">
   </div>
-
+#lightbox {
+  position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #fcf0d6; 
+    display: none; 
+    justify-content: center;
+    align-items: center; 
+    z-index: 999; 
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    border: 4px solid white; 
+}
 </body>
 </html>
 
